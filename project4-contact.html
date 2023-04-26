@@ -1,0 +1,103 @@
+<!--------------------
+
+    Project 4
+    Name: Scot Motuz
+    Date: 2023-4-26
+
+--------------------->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>project4-contact</title>
+		<link rel="stylesheet" type="text/css" href="p4styles.css" />
+		<script src="js/formValidate.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<img id="background" src="images/Jackson.jpg" alt="Galaxy Background">
+				<h1>Guitar Builders</h1>
+				<nav id="topNav">
+					<ul>
+						<li><a href="project4-home.html">HOME</a> | </li>
+						<li><a href="project4-order.html">ORDER</a> | </li>
+						<li><a href="#">CONTACT</a> | </li>
+					</ul>
+				</nav>
+			</header>
+			<section>
+				<h2>Contact</h2>
+				<fieldset>
+					<ol>
+						<li>
+							<label for="fullname">Full Name</label>
+							<input id="fullname" name="fullname" type="text" />
+							<p class="shippingError error" id="fullname_error">* Required field</p>
+						</li>
+						<li>
+							<label for="phone">Phone Number</label>
+							<input type="text" id="phone" name="phone" placeholder="1(555)555-5555">
+							<p class="shippingError error" id="phone_error">* Required field</p>
+						</li>
+						<li>
+							<label for="address">Address</label>
+							<input id="address" name="address" type="text" />
+							<p class="shippingError error" id="address_error">* Required field</p>
+						</li>
+						<li>
+							<label for="city">City</label>
+							<input id="city" name="city" type="text" />
+							<p class="shippingError error" id="city_error">* Required field</p>
+						</li>
+						<li>
+							<label for="province">Province</label>
+							<select id="province" name="province">
+								<option value="AB">Alberta</option>
+								<option value="BC">British Columbia</option>
+								<option value="MB">Manitoba</option>
+								<option value="NB">New Brunswick</option>
+								<option value="NL">Newfoundland and Labrador</option>
+								<option value="NS">Nova Scotia</option>
+								<option value="ON">Ontario</option>
+								<option value="PE">Prince Edward Island</option>
+								<option value="QC">Quebec</option>
+								<option value="SK">Saskatchewan</option>
+								<option value="NT">Northwest Territories</option>
+								<option value="NU">Nunavut</option>
+								<option value="YT">Yukon</option>
+							</select>
+							<p class="shippingError error" id="province_error">* Required field</p>
+						</li>
+						<li>
+							<label for="postal">Postal Code</label>
+							<input id="postal" name="postal" type="text" />
+							<p class="shippingError error" id="postal_error">* Required field</p>
+							<p class="shippingError error" id="postalformat_error">* Invalid postal code</p>
+						</li>
+						<li>
+							<label for="email">Email</label>
+							<input id="email" name="email" type="text" />
+							<p class="shippingError error" id="email_error">* Required field</p>
+							<p class="shippingError error" id="emailformat_error">
+								* Invalid email address
+							</p>
+						</li>
+					</ol>
+					<p>Type your message here:</p>
+					<textarea name="message" id="message" cols="100" rows="10"></textarea>
+				</fieldset>	
+				<p class="center">
+					<button type="submit" id="submit">Contact</button>
+					<button type="reset" id="clear">Clear Form</button>
+				</p>						
+			</section>
+			<footer>
+				<ul>
+					<li><a href="project4-home.html">Home</a> | </li>
+					<li><a href="project4-order.html">Order</a> | </li>
+					<li><a href="#">Contact</a> | </li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+</html>
